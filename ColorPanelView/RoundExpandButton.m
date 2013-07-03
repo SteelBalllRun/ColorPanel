@@ -168,6 +168,7 @@ const static int position_factor[4][2]={{-1,0},{0,0},{0,1},{-1,1}};
         if ([self isTouch:touch_point InRect:_item_view.frame]&&!is_expanding)
         {
             [_item_view.layer setBorderColor:[UIColor greenColor].CGColor];
+            [_item_view.layer setBorderWidth:2];
             [selected_panel setBackgroundColor:_item_view.backgroundColor];
         }else
         {
